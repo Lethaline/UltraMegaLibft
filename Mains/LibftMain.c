@@ -3,18 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   LibftMain.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lolemmen <lolemmen@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lolemmen <lolemmen@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 15:10:56 by lolemmen          #+#    #+#             */
-/*   Updated: 2022/07/11 15:23:22 by lolemmen         ###   ########.fr       */
+/*   Updated: 2022/07/20 18:17:56 by lolemmen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Includes/libft.h"
+#include "../Includes/libft.h"
+#include "stdio.h"
 
 int main(void)
 {
     printf("ft_atoi : \n");
+	printf("NULL : %d\n", ft_atoi(""));
+	printf("NULL : %d\n", atoi(""));
+	printf("Negative : %d\n", ft_atoi("-1234"));
+	printf("Negative : %d\n", atoi("-1234"));
+	printf("Positive : %d\n", ft_atoi("1234"));
+	printf("Positive : %d\n", atoi("1234"));
+	printf("Max Int : %d\n", ft_atoi("2147483647"));
+	printf("Max Int : %d\n", atoi("2147483647"));
+	printf("Min Int : %d\n", ft_atoi("-2147483648"));
+	printf("Min Int : %d\n", atoi("-2147483648"));
+	printf("\n\n");
     printf("ft_bzero : \n");
     printf("ft_calloc : \n");
     printf("ft_isalnum : \n");

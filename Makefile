@@ -6,7 +6,7 @@
 #    By: lolemmen <lolemmen@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/04 20:48:30 by lolemmen          #+#    #+#              #
-#    Updated: 2022/07/09 18:22:45 by lolemmen         ###   ########.fr        #
+#    Updated: 2022/07/25 10:12:17 by lolemmen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,7 @@ INC = \
 SRC = \
 	 Arrays/ft_arraylen.c \
 	 Arrays/ft_push_a.c \
+	 Arrays/ft_push_b.c \
 	 Chars/ft_isalnum.c \
 	 Chars/ft_isalpha.c \
 	 Chars/ft_isascii.c \
@@ -81,9 +82,12 @@ SRC = \
 	 Lists/ft_lstsize.c \
 	 Memories/ft_bzero.c \
 	 Memories/ft_calloc.c \
+	 Memories/ft_memalloc.c \
+	 Memories/ft_memccpy.c \
 	 Memories/ft_memchr.c \
 	 Memories/ft_memcmp.c \
 	 Memories/ft_memcpy.c \
+	 Memories/ft_memdel.c \
 	 Memories/ft_memmove.c \
 	 Memories/ft_memset.c \
 	 Numbers/ft_atof.c \

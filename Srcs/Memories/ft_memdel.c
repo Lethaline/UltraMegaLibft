@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_push_a.c                                        :+:      :+:    :+:   */
+/*   ft_memdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lolemmen <lolemmen@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/12 19:47:56 by lolemmen          #+#    #+#             */
-/*   Updated: 2022/07/22 23:15:10 by lolemmen         ###   ########.fr       */
+/*   Created: 2022/07/25 09:56:22 by lolemmen          #+#    #+#             */
+/*   Updated: 2022/07/25 09:57:15 by lolemmen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../Includes/libft.h"
 
-void ft_push_a(int *tab)
+void	ft_memdel(void **ap)
 {
-	int	mem;
-
-	mem = tab[0];
-	tab[0] = tab[1];
-	tab[1] = mem;
+	if (ap && *ap)
+	{
+		free(*ap);
+		*ap = NULL;
+	}
 }

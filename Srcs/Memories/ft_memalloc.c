@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_push_a.c                                        :+:      :+:    :+:   */
+/*   ft_memalloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lolemmen <lolemmen@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/12 19:47:56 by lolemmen          #+#    #+#             */
-/*   Updated: 2022/07/22 23:15:10 by lolemmen         ###   ########.fr       */
+/*   Created: 2022/07/25 09:57:49 by lolemmen          #+#    #+#             */
+/*   Updated: 2022/07/25 09:59:04 by lolemmen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../Includes/libft.h"
 
-void ft_push_a(int *tab)
+void	*ft_memalloc(size_t size)
 {
-	int	mem;
+	char	*mem;
 
-	mem = tab[0];
-	tab[0] = tab[1];
-	tab[1] = mem;
+	mem = (char *)malloc(sizeof(char) * size);
+	if (!mem)
+		return (NULL);
+	while ((int)--size >= 0)
+		*(mem + size) = '\0';
+	return (mem);
 }

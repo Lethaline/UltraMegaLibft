@@ -6,7 +6,7 @@
 /*   By: lolemmen <lolemmen@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 14:35:14 by lolemmen          #+#    #+#             */
-/*   Updated: 2022/07/09 18:22:54 by lolemmen         ###   ########.fr       */
+/*   Updated: 2022/07/25 10:12:58 by lolemmen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ typedef struct s_args
 
 size_t	ft_arraylen(const void *array);
 void	ft_push_a(int *tab);
+void	ft_push_b(int *tab);
 
 // Chars
 
@@ -110,9 +111,12 @@ int		ft_lstsize(t_list *lst);
 
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
+void	*ft_memalloc(size_t size);
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
+void	ft_memdel(void **ap);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memset(void *b, int c, size_t len);
 
